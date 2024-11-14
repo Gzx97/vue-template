@@ -1,5 +1,3 @@
-/// <reference types="vitest" />
-
 import { type ConfigEnv, type UserConfigExport, loadEnv } from "vite"
 import path, { resolve } from "path"
 import vue from "@vitejs/plugin-vue"
@@ -93,11 +91,6 @@ export default ({ mode }: ConfigEnv): UserConfigExport => {
       }),
       /** UnoCSS */
       UnoCSS()
-    ],
-    /** Vitest 单元测试配置：https://cn.vitest.dev/config */
-    test: {
-      include: ["tests/**/*.test.ts"],
-      environment: "jsdom"
-    }
+    ]
   }
 }
