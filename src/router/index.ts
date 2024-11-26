@@ -58,6 +58,16 @@ export const constantRoutes: RouteRecordRaw[] = [
           svgIcon: "dashboard",
           affix: true
         }
+      },
+      {
+        path: "dashboard/details/:id", // 动态参数 id
+        component: () => import("@/views/dashboard/detail/index.vue"), // 子页面组件
+        name: "DashboardDetails",
+        meta: {
+          title: "详情页",
+          hidden: true,
+          hiddenHeaderContent: true
+        }
       }
     ]
   },
@@ -202,7 +212,7 @@ export const constantRoutes: RouteRecordRaw[] = [
     redirect: "/hook-demo/use-fetch-select",
     name: "HookDemo",
     meta: {
-      title: "Hook",
+      title: "Hooks",
       elIcon: "Menu",
       alwaysShow: true
     },
