@@ -3,8 +3,6 @@ import { LayoutModeEnum } from "@/constants/app-key"
 
 /** 项目配置类型 */
 export interface LayoutSettings {
-  /** 是否显示 Settings Panel */
-  showSettings: boolean
   /** 布局模式 */
   layoutMode: LayoutModeEnum
   /** 是否显示标签栏 */
@@ -36,7 +34,6 @@ export interface LayoutSettings {
 /** 默认配置 */
 const defaultSettings: LayoutSettings = {
   layoutMode: LayoutModeEnum.Left,
-  showSettings: true,
   showTagsView: true,
   fixedHeader: true,
   showFooter: true,
