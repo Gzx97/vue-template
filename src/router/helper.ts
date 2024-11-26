@@ -3,16 +3,12 @@ import {
   type RouteRecordNormalized,
   type RouteRecordRaw,
   createRouter,
-  createWebHashHistory,
   createWebHistory
 } from "vue-router"
 import { cloneDeep, omit } from "lodash-es"
 
 /** 路由模式 */
-export const history =
-  import.meta.env.VITE_ROUTER_HISTORY === "hash"
-    ? createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH)
-    : createWebHistory(import.meta.env.VITE_PUBLIC_PATH)
+export const history = createWebHistory(import.meta.env.VITE_PUBLIC_PATH)
 
 /** 路由降级（把三级及其以上的路由转化为二级路由） */
 export const flatMultiLevelRoutes = (routes: RouteRecordRaw[]) => {

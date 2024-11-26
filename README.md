@@ -49,17 +49,6 @@ V3 Admin Vite 是一个免费开源的中后台管理系统基础解决方案，
 - **UnoCSS**：具有高性能且极具灵活性的即时原子化 CSS 引擎
 - **兼容移动端**: 布局兼容移动端页面分辨率
 
-## 功能
-
-- **用户管理**：登录、登出演示
-- **权限管理**：页面级权限（动态路由）、按钮级权限（指令权限、权限函数）、路由守卫
-- **多环境**：开发环境（development）、预发布环境（staging）、正式环境（production）
-- **多主题**：普通、黑暗、深蓝, 三种主题模式
-- **多布局**：左侧、顶部、混合, 三种布局模式
-- **错误页面**: 403、404
-- **Dashboard**：根据不同用户显示不同的 Dashboard 页面
-- **其他内置功能**：SVG、动态侧边栏、动态面包屑、标签页快捷导航、Screenfull 全屏、自适应收缩侧边栏、Hook（Composables）
-
 ## 🚀 开发
 
 ```bash
@@ -126,35 +115,3 @@ pnpm test
 - `ci` 持续集成相关
 - `types` 类型定义文件更改
 - `wip` 开发中
-
-## 项目预览图
-
-![preview1.png](./src/assets/docs/preview1.png)
-![preview2.png](./src/assets/docs/preview2.png)
-![preview3.png](./src/assets/docs/preview3.png)
-
-## 💕 贡献者
-
-感谢所有的贡献者！
-
-<a href="https://github.com/un-pany/v3-admin-vite/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=un-pany/v3-admin-vite" />
-</a>
-
-## 💕 感谢 Star
-
-小项目获取 star 不易，如果你喜欢这个项目的话，欢迎支持一个 star！这是作者持续维护的唯一动力（小声：毕竟是免费的）
-
-## ☕ Donate
-
-[查看捐赠方式](https://github.com/un-pany/v3-admin-vite/issues/69)
-
-## 可有可无的群
-
-[查看进群方式](https://github.com/un-pany/v3-admin-vite/issues/191)
-
-## 📄 License
-
-[MIT](./LICENSE)
-
-Copyright (c) 2022-present [pany](https://github.com/pany-ang)
