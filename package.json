@@ -1,5 +1,5 @@
 {
-  "name": "v3-admin-vite",
+  "name": "v3-template",
   "private": true,
   "version": "0.0.0",
   "description": "基于 Vue3、TypeScript、Element Plus、Pinia 和 Vite 等技术",
@@ -60,7 +60,6 @@
     "prettier": "3.3.3",
     "sass": "1.78.0",
     "typescript": "5.6.3",
-    "unocss": "0.63.6",
     "vite": "5.4.10",
     "vite-plugin-svg-icons": "2.0.1",
     "vite-svg-loader": "5.1.0",

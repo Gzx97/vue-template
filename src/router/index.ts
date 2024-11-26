@@ -61,22 +61,7 @@ export const constantRoutes: RouteRecordRaw[] = [
       }
     ]
   },
-  {
-    path: "/unocss",
-    component: Layouts,
-    redirect: "/unocss/index",
-    children: [
-      {
-        path: "index",
-        component: () => import("@/views/unocss/index.vue"),
-        name: "UnoCSS",
-        meta: {
-          title: "UnoCSS",
-          svgIcon: "unocss"
-        }
-      }
-    ]
-  },
+
   {
     path: "/link",
     meta: {
@@ -85,19 +70,19 @@ export const constantRoutes: RouteRecordRaw[] = [
     },
     children: [
       {
-        path: "https://juejin.cn/post/7089377403717287972",
+        path: "https://juejin.cn",
         component: () => {},
         name: "Link1",
         meta: {
-          title: "中文文档"
+          title: "掘金"
         }
       },
       {
-        path: "https://juejin.cn/column/7207659644487139387",
+        path: "https://jitrioe.com/",
         component: () => {},
         name: "Link2",
         meta: {
-          title: "新手教程"
+          title: "集萃中科"
         }
       }
     ]
