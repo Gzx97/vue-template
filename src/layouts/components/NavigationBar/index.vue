@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import { useRouter } from "vue-router"
-import { storeToRefs } from "pinia"
+// import { storeToRefs } from "pinia"
 import { useAppStore } from "@/store/modules/app"
-import { useSettingsStore } from "@/store/modules/settings"
+// import { useSettingsStore } from "@/store/modules/settings"
 import { useUserStore } from "@/store/modules/user"
 import { UserFilled } from "@element-plus/icons-vue"
 import Hamburger from "../Hamburger/index.vue"
 import Breadcrumb from "../Breadcrumb/index.vue"
 import Sidebar from "../Sidebar/index.vue"
-import Notify from "@/components/Notify/index.vue"
-import ThemeSwitch from "@/components/ThemeSwitch/index.vue"
+// import Notify from "@/components/Notify/index.vue"
+// import ThemeSwitch from "@/components/ThemeSwitch/index.vue"
 import { useDevice } from "@/hooks/useDevice"
 import { useLayoutMode } from "@/hooks/useLayoutMode"
 
@@ -18,8 +18,8 @@ const { isTop } = useLayoutMode()
 const router = useRouter()
 const appStore = useAppStore()
 const userStore = useUserStore()
-const settingsStore = useSettingsStore()
-const { showNotify, showThemeSwitch } = storeToRefs(settingsStore)
+// const settingsStore = useSettingsStore()
+// const { showNotify, showThemeSwitch } = storeToRefs(settingsStore)
 
 /** 切换侧边栏 */
 const toggleSidebar = () => {
@@ -44,8 +44,8 @@ const logout = () => {
     <Breadcrumb v-if="!isTop || isMobile" class="breadcrumb" />
     <Sidebar v-if="isTop && !isMobile" class="sidebar" />
     <div class="right-menu">
-      <ThemeSwitch v-if="showThemeSwitch" class="right-menu-item" />
-      <Notify v-if="showNotify" class="right-menu-item" />
+      <!-- <ThemeSwitch v-if="showThemeSwitch" class="right-menu-item" /> -->
+      <!-- <Notify v-if="showNotify" class="right-menu-item" /> -->
       <el-dropdown class="right-menu-item">
         <div class="right-menu-avatar">
           <el-avatar :icon="UserFilled" :size="30" />
