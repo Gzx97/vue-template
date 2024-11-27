@@ -48,6 +48,7 @@ export const constantRoutes: RouteRecordRaw[] = [
     path: "/",
     component: Layouts,
     redirect: "/dashboard",
+
     children: [
       {
         path: "dashboard",
@@ -66,37 +67,38 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "详情页",
           hidden: true,
-          hiddenHeaderContent: true
+          activeMenu: "/dashboard",
+          breadcrumb: false
         }
       }
     ]
   },
 
-  {
-    path: "/link",
-    meta: {
-      title: "外链",
-      svgIcon: "link"
-    },
-    children: [
-      {
-        path: "https://juejin.cn",
-        component: () => {},
-        name: "Link1",
-        meta: {
-          title: "掘金"
-        }
-      },
-      {
-        path: "https://jitrioe.com/",
-        component: () => {},
-        name: "Link2",
-        meta: {
-          title: "集萃中科"
-        }
-      }
-    ]
-  },
+  // {
+  //   path: "/link",
+  //   meta: {
+  //     title: "外链",
+  //     svgIcon: "link"
+  //   },
+  //   children: [
+  //     {
+  //       path: "https://juejin.cn",
+  //       component: () => {},
+  //       name: "Link1",
+  //       meta: {
+  //         title: "掘金"
+  //       }
+  //     },
+  //     {
+  //       path: "https://jitrioe.com/",
+  //       component: () => {},
+  //       name: "Link2",
+  //       meta: {
+  //         title: "集萃中科"
+  //       }
+  //     }
+  //   ]
+  // },
   {
     path: "/table",
     component: Layouts,
