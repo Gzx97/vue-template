@@ -26,7 +26,7 @@ pnpm preview:prod
 
 ## 📦️ 多环境打包
 
-```bash
+```bas
 # 构建预发布环境
 pnpm build:stage
 
@@ -40,8 +40,6 @@ pnpm build:prod
 # 代码格式化
 pnpm lint
 
-# 单元测试
-pnpm test
 ```
 
 ## Git 提交规范参考

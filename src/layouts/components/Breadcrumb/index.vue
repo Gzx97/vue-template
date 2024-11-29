@@ -14,7 +14,7 @@ const breadcrumbs = ref<RouteLocationMatched[]>([])
 /** 获取面包屑导航信息 */
 const getBreadcrumb = () => {
   const value = route.matched.filter((item) => item.meta?.title && item.meta?.breadcrumb !== false)
-  console.log(value, "面包屑")
+  // console.log(value, "面包屑")
   breadcrumbs.value = value
 }
 
