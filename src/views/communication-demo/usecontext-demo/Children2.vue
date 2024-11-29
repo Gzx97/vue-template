@@ -1,4 +1,3 @@
-<!-- Children2.vue -->
 <template>
   <div>
     <h2>Child2：{{ count }}</h2>

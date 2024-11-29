@@ -270,6 +270,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "useContext通信"
         }
+      },
+      {
+        path: "pinia",
+        component: () => import("@/views/communication-demo/pinia-demo/ParentComponent.vue"),
+        name: "pinia",
+        meta: {
+          title: "pinia通信"
+        }
       }
     ]
   }
