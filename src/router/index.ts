@@ -257,7 +257,7 @@ export const constantRoutes: RouteRecordRaw[] = [
     children: [
       {
         path: "common",
-        component: () => import("@/views/communication-demo/index.vue"),
+        component: () => import("@/views/communication-demo/common-demo/ParentComponent.vue"),
         name: "common",
         meta: {
           title: "常规通信"
@@ -265,7 +265,7 @@ export const constantRoutes: RouteRecordRaw[] = [
       },
       {
         path: "useContext",
-        component: () => import("@/views/communication-demo/index.vue"),
+        component: () => import("@/views/communication-demo/usecontext-demo/ParentComponent.vue"),
         name: "useContext",
         meta: {
           title: "useContext通信"
