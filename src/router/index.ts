@@ -278,6 +278,14 @@ export const constantRoutes: RouteRecordRaw[] = [
         meta: {
           title: "pinia通信"
         }
+      },
+      {
+        path: "mitt",
+        component: () => import("@/views/communication-demo/mitt-demo/ParentComponent.vue"),
+        name: "mitt",
+        meta: {
+          title: "mitt通信"
+        }
       }
     ]
   }
